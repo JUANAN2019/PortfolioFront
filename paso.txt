@@ -1,0 +1,40 @@
+instalo extras a-frame
+Usage (NPM)
+npm install --save aframe-extras
+// index.js
+require('aframe-extras');
+Once installed, you'll need to compile your JavaScript using something like webpack.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+npm install aframe-template-component
+Then register and use.
+
+require('aframe');
+require('aframe-template-component');
+Solución de problemas
+Tenga en cuenta que si usa esto dentro de React, asegúrese de que la plantilla 
+esté definida fuera de la raíz de React. React tratará la plantilla como DOM real en lugar de una cadena.
+
+npm install --save aframe-physics-system
+// my-app.js
+require('aframe-physics-system');
+
+
+Tambien meto en header de index.html
+<script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+y no funciona ademas tengo instalada aframe-extras
+
+Posible solucion probar despues
+https://hackernoon.com/es/como-agregar-etiquetas-de-script-en-reaccion
+
+Probando los import que tengo en 3d y en barco.jsx  y viendo porque se me ve negro con color shader y demas del box
+
+pagina documentacion react a-frame
+https://www.newline.co/fullstack-react/articles/react-and-webvr-using-aframe/
+las texturas funcionan
+ <a-assets>
+       
+        <img src={require('./assets/textures/sky.jpg')} alt=""id='sky' />
+        </a-assets>
+
+documentacion a-frame gltf y conservar animacion gltf
+https://aframe.io/docs/1.4.0/components/gltf-model.html
